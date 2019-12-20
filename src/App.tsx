@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <footer>
-        备案号: <a href={'https://www.miitbeian.gov.cn'}>苏ICP备15011962号</a>
+        备案号: <a href={'http://beian.miit.gov.cn/'}>苏ICP备15011962号</a>
       </footer>
     </div>
   );
