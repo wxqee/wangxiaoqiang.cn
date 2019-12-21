@@ -1,3 +1,4 @@
+[![Build Status](https://secure.travis-ci.org/wxqee/wangxiaoqiang.cn.png)](http://travis-ci.org/wxqee/wangxiaoqiang.cn)
 ## Description
 
 Let's say my site is deployed on AliYun OSS, and can be accessed from AliYun CDN.
