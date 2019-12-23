@@ -15,7 +15,7 @@ const client = new OSS({
   accessKeySecret: process.env.ALIYUN_ACCESS_KEY_SECRET,
 });
 
-const publicPath = path.resolve(__dirname, '../build');
+const publicPath = path.resolve(__dirname, '../_book');
 
 async function run(proPath = '') {
   const dir = await promisifyReaddir(`${publicPath}${proPath}`);
