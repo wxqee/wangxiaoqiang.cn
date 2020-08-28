@@ -5,10 +5,10 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header>
-        <h2>开发中...</h2>
+        <h2>还没有准备好😊</h2>
       </header>
       <footer>
-        备案号: <a href={'http://beian.miit.gov.cn/'}>苏ICP备15011962号</a>
+        {/*备案号: <a href={'http://beian.miit.gov.cn/'}>苏ICP备15011962号</a>*/}
       </footer>
     </div>
   );

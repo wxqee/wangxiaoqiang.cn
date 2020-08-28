@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>名字卡</title>
+    <script>
+        /**
+         * Usage:
+         *  1. `yarn build`
+         *  2. `yarn global add serve`
+         *  3. `serve -s build`
+         *  4. browse http://localhost:5000/i/name-card.html?name=名字
+         *  6. print web page with your printer
+         */
+    </script>
+
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        .center-of-page {
+            width: 100%;
+            text-align: center;
+        }
+
+        .name-card {
+            font-family: "Yuanti SC";
+            font-size: 24vw;
+            padding: 3vw;
+        }
+
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+
+
+        .closer {
+            background-color: aliceblue;
+            height: 25vh;
+            font-size: 5vw;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+  var urlData = new URLSearchParams(document.location.search);
+</script>
+<div class="closer center-of-page">胶水封口处</div>
+<div class="name-card rotate-180 center-of-page">
+    <script>document.write(urlData.get('name'))</script>
+</div>
+<div class="name-card center-of-page">
+    <script>document.write(urlData.get('name'))</script>
+</div>
+<div class="closer center-of-page">胶水封口处</div>
+
+</body>
+</html>
