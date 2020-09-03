@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>名字卡</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            text-align: center;
+            background-color: rgb(240,180,170);
+        }
+
+        .center-of-page {
+            width: 100%;
+            text-align: center;
+        }
+
+        .name-card {
+            border-top: 1px dotted red;
+            border-bottom: 1px dotted red;
+
+            /*font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;*/
+            font-family: "Kaiti SC";
+            line-height: 30vh;
+            font-size: 25vw;
+        }
+
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+
+        .closer {
+            /*background-color: aliceblue;*/
+            height: 9.5vh;
+            font-size: 7vw;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    var urlData = new URLSearchParams(document.location.search);
+</script>
+
+<div class="name-card">
+    &nbsp;
+</div>
+<div class="name-card rotate-180 center-of-page">
+    <script>document.write(urlData.get('name'))</script>
+</div>
+<div class="name-card center-of-page">
+    <script>document.write(urlData.get('name'))</script>
+</div>
+<div class="closer center-of-page">胶水封口处</div>
+
+</body>
+</html>
